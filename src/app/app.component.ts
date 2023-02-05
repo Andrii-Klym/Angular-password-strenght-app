@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  public account = {
+    password: <string><unknown>null
+  };
+  public barLabel: string = "Password strength:";
+  public myColors = ['#DD2C00', '#FF6D00', '#FFD600', '#AEEA00', '#00C853'];
+  public thresholds = [90, 75, 45, 25];
+  public strengthLabels = ['(Useless)', '(Weak)', '(Normal)', '(Strong)', '(Great!)'];
 }

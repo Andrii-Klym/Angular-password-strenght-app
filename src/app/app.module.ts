@@ -4,13 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { Ng9PasswordStrengthBarModule } from 'ng9-password-strength-bar';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng9PasswordStrengthBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
